@@ -1,3 +1,7 @@
+"""
+未完
+"""
+
 def main():
 
     n, b, k = map(int, input().split())
