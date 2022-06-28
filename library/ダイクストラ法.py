@@ -1,3 +1,6 @@
+
+# 引数、スタートのノード、グラフ（距離、向かう場所、エッジ番号）
+# 返る、距離リスト、最短の道リスト
 def dijkstra(s: int, g: list):
     
     from heapq import heappush, heappop
