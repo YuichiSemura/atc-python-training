@@ -6,7 +6,6 @@ def main():
     sl = [-1 if ss == '1' else 0 for ss in s]
     ll = [(w, s) for s, w in zip(sl, wl)]
     ll.sort()
-    # print(ll)
     ol = []
     oc = 0
     kl = []
@@ -20,7 +19,6 @@ def main():
         kl.append(kc)
     mx = ol[-1]
     for o, k in zip(ol, kl):
-        # print(ol[-1] - o + k)
         mx = max(mx, ol[-1] - o + k)
     print(mx)
 
