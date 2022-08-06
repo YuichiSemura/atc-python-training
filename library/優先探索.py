@@ -2,6 +2,7 @@ def main():
     from collections import deque
     n, m = list(map(int, input().split()))
     g = [[] for _ in range(n)]
+    # 道リスト（x番目のml[x] = u, vを繋ぐ道）
     ml = []
     for i in range(m):
         mu, mv = list(map(int, input().split()))
