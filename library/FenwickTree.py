@@ -23,3 +23,7 @@ class Fenwick_Tree:
             s += self.data[r - 1]
             r -= r & -r
         return s
+    
+    def clear(self, n):
+        self._n = n
+        self.data = [0] * n
