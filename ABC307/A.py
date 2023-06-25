@@ -1,9 +1,9 @@
 def main():
 
     n = int(input())
-    n, m = map(int, input().split())
     al = list(map(int, input().split()))
-    ql = [list(map(int, input().split())) for _ in range(n)]
+    print(" ".join([str(sum(al[i*7:i*7+7])) for i in range(n)]))
+        
 
 if __name__ == '__main__':
     main()
