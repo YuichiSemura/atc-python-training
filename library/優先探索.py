@@ -12,13 +12,13 @@ def main():
         g[mv].append((mu, i))
         ml.append((mu, mv))
 
-    # 深さ
-    used = [False for _ in range(n)]
+    # 深さ優先探索
+    used = [False] * n
     q = deque()
     used[0] = True
     for nn in g[0]:
         q.append(nn)
-    while(q):
+    while q:
         node, ed = q.pop()
         if used[node]:
             continue
@@ -27,7 +27,7 @@ def main():
         for nn in g[node]:
             q.append(nn)
 
-    # 幅
+    # 幅優先探索
     used = [False for _ in range(n)]
     q = deque()
     used[0] = True
@@ -42,6 +42,16 @@ def main():
         for nn in g[node]:
             q.append(nn)
 
+
+# typical26 深さ優先探索
+# 再帰回数の制限で失敗しやすいので使わない
+def dfs(g, used, node, color):
+    
+    if used[node] != -1:
+        return
+    used[node] = color
+    for nn in g[node]:
+        dfs(g, used, nn, pairs, 1 - color)
 
 if __name__ == '__main__':
     main()
