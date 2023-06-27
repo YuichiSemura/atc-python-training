@@ -1,3 +1,5 @@
+# 2次元いもす法
+
 def main():
 
     n = int(input())

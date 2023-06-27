@@ -1,3 +1,4 @@
+# 三角関数の計算
 import math
 
 def main():

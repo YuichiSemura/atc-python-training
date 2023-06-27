@@ -1,3 +1,5 @@
+# 互除法
+
 def main():
 
     a, b, c = map(int, input().split())

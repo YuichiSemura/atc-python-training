@@ -1,3 +1,5 @@
+# 深さ優先探索
+
 def main():
 
     from collections import deque
@@ -7,7 +9,6 @@ def main():
     for a, b in abl:
         g[a-1].append(b-1)
         g[b-1].append(a-1)
-    # 深さ
     used = [-1] * n
     pairs = [[], []]
     q = deque()
