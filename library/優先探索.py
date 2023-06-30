@@ -1,6 +1,10 @@
 def main():
-    from collections import deque
+    
+    
     n, m = list(map(int, input().split()))
+    
+    from collections import deque
+    # グラフ g[u] = [(v, edge_id), ...]
     g = [[] for _ in range(n)]
     # 道リスト（x番目のml[x] = u, vを繋ぐ道）
     ml = []
